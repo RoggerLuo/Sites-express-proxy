@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-dev",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "render": "node -r babel-register serverRender.js",
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "~1.4.3",
+    "csv": "^1.1.1",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "http-proxy": "^1.16.2",
+    "iconv-lite": "^0.4.17",
+    "jquery": "^3.2.1",
+    "node-csv": "^0.1.2",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "jsdom": "^10.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "shelljs": "^0.3.0",
+    "url-loader": "^0.5.7"
+  }
+}
