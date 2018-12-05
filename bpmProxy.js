@@ -18,15 +18,15 @@ var proxy = httpProxy.createProxyServer({
     // target: 'http://bpmnew.workapps.io'
     // target:'http://172.16.1.40:8080',
     // target:'http://172.16.1.27:8080/activiti' //'http://172.16.1.244',
-    target:'http://172.16.1.25:8880/activiti' //  开发
-    // target:'http://172.16.1.141:8082', //赐飞
+    // target:'http://172.16.1.25:8880/activiti' //  开发
+    target:'http://172.16.1.244', //赐飞
     // target:'http://172.16.1.71' //杨峰
     // target:'http://172.16.1.244', //测试
 })
 proxy.on('proxyReq', function(proxyReq, req, res, options) {
     proxyReq.setHeader('from', 'admin')
     proxyReq.setHeader('Accept', 'application/json')
-    proxyReq.setHeader("Authorization", "Bearer 610528aceda04ba296248b55314b89e5")
+    proxyReq.setHeader("Authorization", "Bearer 5f6473275d6d400fa9f605dd68fafabf")
     proxyReq.setHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
 });
 
