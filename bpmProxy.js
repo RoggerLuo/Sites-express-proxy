@@ -26,7 +26,7 @@ var proxy = httpProxy.createProxyServer({
 proxy.on('proxyReq', function(proxyReq, req, res, options) {
     proxyReq.setHeader('from', 'admin')
     proxyReq.setHeader('Accept', 'application/json')
-    proxyReq.setHeader("Authorization", "Bearer 5f6473275d6d400fa9f605dd68fafabf")
+    proxyReq.setHeader("Authorization", "Bearer 45ee95544c764eac844c3cce65f831f4")
     proxyReq.setHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
 });
 
