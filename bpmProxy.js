@@ -19,14 +19,14 @@ var proxy = httpProxy.createProxyServer({
     // target:'http://172.16.1.40:8080',
     // target:'http://172.16.1.27:8080/activiti' //'http://172.16.1.244',
     // target:'http://172.16.1.25:8880/activiti' //  开发
-    target:'http://172.16.1.244', //赐飞
+    // target:'http://172.16.1.141:8082', //赐飞
     // target:'http://172.16.1.71' //杨峰
-    // target:'http://172.16.1.244', //测试
+    target:'http://172.16.1.244', //测试
 })
 proxy.on('proxyReq', function(proxyReq, req, res, options) {
     proxyReq.setHeader('from', 'admin')
     proxyReq.setHeader('Accept', 'application/json')
-    proxyReq.setHeader("Authorization", "Bearer 45ee95544c764eac844c3cce65f831f4")
+    proxyReq.setHeader("Authorization", "Bearer 7318113f87854c549a4e9be5be3d73d0")
     proxyReq.setHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
 });
 
